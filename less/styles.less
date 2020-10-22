@@ -1,0 +1,2000 @@
+@font-face{
+    font-family: GothamProRegular; 
+    src: url(../fonts/GothamProRegular.woff);
+}
+@maincolor:#BCBDC0;
+@artcolor:#F9F9F9;
+@circleborder:0.296vw solid  #E00027;
+body{
+    padding: 0;
+    margin: 0;
+    background: @maincolor;
+    transition: 1.2s;
+  #container{
+      max-width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url(../images/mainfon.jpg) no-repeat ;
+      background-size: 100% 40.5%;
+        .header{
+          max-width: 900px;
+          height: auto;
+          background: @artcolor;
+        .logoimage{
+              width: 900px;
+              height:90px;
+              background: url(../images/logoim.jpg) no-repeat ;
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-end;
+              align-items: center;
+                 .messengerlink{
+                       display: flex;
+                       flex-direction: row;
+                     form{
+                         
+                         button{
+                             border: none !important;
+                             background-color: transparent !important;
+                             display: inline-block;
+                            }
+                            button:hover{
+                             border: none !important;
+                             background-color: transparent !important;
+                             }
+                         }
+                    .facebooklink{
+                        margin-right: 15px;
+                        margin-left:7px ;
+                    }
+                   }
+                 }
+             .headerfon{
+                 width: 900px;
+                 height: auto;
+                 display: flex;
+                 flex-direction: row;
+              justify-content: flex-end;
+              align-items: center;
+             } 
+            
+             span{
+                 display: flex;
+                 flex-wrap: wrap;
+                 flex-direction: row;
+                 justify-content: center;
+                 text-align: center;
+                 height: auto;
+                 p{
+                  font:normal 0.25vw GothamProRegular;
+                  font-style: normal;
+                  color: #333E48;
+                }
+             }
+            
+          
+        }
+        .content{
+          width: 900px;
+          height: auto;
+          background: #F9F9F;
+           span{
+                  
+                  display: flex;
+                  justify-content: center;
+                  height: 76px;
+                 p{
+                      border: @circleborder;
+                      border-radius: 50% 50%;
+                      font: normal 0.5vw GothamProRegular;
+                      clip-path: circle(50%);
+                      height: 0.021em;
+                      width: 0.021em; 
+                      color: #E00027;
+                      text-align: center;
+                      
+                   }
+                   
+              }
+             div{
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              height: 230px;
+              align-items: flex-start;
+              text-align: center;
+              
+                  h3{
+                          font: 700 0.575vw GothamProRegular;
+                          font-style: normal;
+                          align-self: flex-start;
+                          flex-wrap: wrap;
+                          line-height: 29px;
+                          color: #333E48;
+                          
+                      }
+             }
+             .product{
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: space-around;
+                 align-items: flex-start;
+                 height: auto;
+                 margin-top: -15px;
+                 a{
+                     display: inline-block;
+                     align-self: flex-start;
+                     
+                }
+               
+             }
+             span{
+                  
+              display: flex;
+              justify-content: center;
+              height: 76px;
+             p{
+                  border: 0.196vw solid  #E00027;
+                  border-radius: 50% 50%;
+                  font: normal 0.75vw GothamProRegular;
+                  clip-path: circle(50%);
+                  height: 0.86em;
+                  font-style: normal;
+                  width: 0.86em; 
+                  color: #E00027;
+                  text-align: center;
+                  
+               }
+              
+          }
+            .rating-result span {
+                  padding: 0;
+                  font-size: 32px;
+                  margin: 0 3px;
+                  line-height: 1;
+                  color: @maincolor;
+                  text-shadow: 0.024vw  0.024vw 0.021vw 0.024vw #bbb;
+              }
+              .rating-result > span:after {
+                  content: '★';
+              }
+              .rating-result > span.active {
+                  color: #E00027;
+                 
+              }
+              .rating-area {
+                  width: 100%;
+                  display: flex;
+                  flex-direction:  row-reverse;
+                  justify-content: center;
+              }
+              .rating-area:not(:checked) > input {
+                  display: none;
+              }
+              .rating-area:not(:checked) > label {
+                  width: 42px;
+                  padding: 0;
+                  cursor: pointer;
+                  font-size: 32px;
+                  line-height: 32px;
+                  color:  @maincolor;
+                  text-shadow: 0.027vw 0.021vw #bbb;
+              }
+              .rating-area:not(:checked) > label:before {
+                  content: '★';
+              }
+              .rating-area > input:checked ~ label {
+                  color: #E00027;
+                  
+              }
+              .rating-area:not(:checked) > label:hover,
+              .rating-area:not(:checked) > label:hover ~ label {
+                  color: #E00027;
+              }
+          
+          div{
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              height: auto;
+              align-items: flex-start;
+              h1{
+                  font: 700 1.875vw GothamProRegular;
+                  font-weight: normal;
+                  line-height: 28,8px;
+                  align-self: flex-start;
+                  color: #333E48;
+              }
+          }
+          .video{
+                display: flex;
+                flex-direction: row;
+                width: 900px;
+                height: 500px;
+                justify-content: center;
+          }
+          .popup {
+              position: relative;
+              bottom: 80px;
+              display: inline-block;
+              cursor: pointer;
+              width: 100%;
+              text-align: center;
+              font: 325 1.25vw GothamProRegular;
+              font-style: normal;
+              color: #333E48;
+          }
+          
+         
+          .popup .popuptext {
+            visibility: hidden;
+            font: 325 1.25vw GothamProRegular;
+            font-style: normal;
+            background-color: rgb(230, 230, 230);
+            color: #333E48;
+            text-align: center;
+            border-radius: 6px;
+            margin-left: 15px;
+            margin-right: 15px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            padding: 10px 0;
+            
+            
+        }
+        
+      
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+        
+        
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s
+        }
+        
+       
+        @-webkit-keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity:1 ;}
+        }
+        
+
+
+      }
+      .footer{
+        width: 900px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        background: @artcolor;
+        .footerimage{
+            width: 900px;
+            height:90px;
+            background: url(../images/footerim.png) no-repeat ;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+               .messengerlink{
+                     display: flex;
+                     flex-direction: row;
+                   form{
+                       
+                       button{
+                           border: none !important;
+                           background-color: transparent !important;
+                           display: inline-block;
+                          }
+                          button:hover{
+                           border: none !important;
+                           background-color: transparent !important;
+                           
+                          }
+                       }
+                  .facebooklink{
+                      margin-right: 15px;
+                      margin-left:7px ;
+                  }
+                 }
+               }
+      }
+
+}
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+        body{
+            padding: 0;
+            margin: 0;
+            background:  @maincolor;
+            transition: 1.2s;
+          #container{
+              max-width: 1600px;
+              height: auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background: url(../images/mainfon.jpg) no-repeat ;
+              background-size: 100% 40.5%;
+                .header{
+                  max-width: 900px;
+                  height: auto;
+                  background: @artcolor;
+                  
+                  
+                .logoimage{
+                      width: 900px;
+                      height:90px;
+                      background: url(../images/logoim.jpg) no-repeat ;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: flex-end;
+                      align-items: center;
+                         .messengerlink{
+                               display: flex;
+                               flex-direction: row;
+                             form{
+                                 
+                                 button{
+                                     border: none !important;
+                                     background-color: transparent !important;
+                                     display: inline-block;
+                                    }
+                                    button:hover{
+                                     border: none !important;
+                                     background-color: transparent !important;
+                                     }
+                                 }
+                            .facebooklink{
+                                margin-right: 15px;
+                                margin-left:7px ;
+                            }
+                           }
+                         }
+                     .headerfon{
+                         width: 900px;
+                         height: auto;
+                         display: flex;
+                         flex-direction: row;
+                      justify-content: flex-end;
+                      align-items: center;
+                     } 
+                    
+                     span{
+                         display: flex;
+                         flex-wrap: wrap;
+                         flex-direction: row;
+                         justify-content: center;
+                         text-align: center;
+                         height: auto;
+                         p{
+                          font:normal 1.25vw GothamProRegular;
+                          font-style: normal;
+                          color: #333E48;
+                        }
+                     }
+                    
+                  
+                }
+                .content{
+                  width: 900px;
+                  height: auto;
+                  background: @artcolor;
+                   span{
+                          
+                          display: flex;
+                          justify-content: center;
+                          height: 76px;
+                         p{
+                              border: 0.296vw solid  #E00027;
+                              border-radius: 50% 50%;
+                              font: normal 2.5vw GothamProRegular;
+                              clip-path: circle(50%);
+                              
+                              height: 1.2em;
+                              width: 1.2em; 
+                              color: #E00027;
+                              text-align: center;
+                              
+                           }
+                           
+                      }
+                     div{
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: center;
+                      height: 230px;
+                      align-items: flex-start;
+                      text-align: center;
+                      
+                          h3{
+                                  font: 700 1.875vw GothamProRegular;
+                                  font-style: normal;
+                                  align-self: flex-start;
+                                  flex-wrap: wrap;
+                                  line-height: 29px;
+                                  color: #333E48;
+                                  
+                              }
+                     }
+                     .product{
+                         display: flex;
+                         flex-direction: row;
+                         justify-content: space-around;
+                         align-items: flex-start;
+                         height: auto;
+                         margin-top: -15px;
+                         a{
+                             display: inline-block;
+                             align-self: flex-start;
+                        }
+                     }
+                     span{
+                          
+                      display: flex;
+                      justify-content: center;
+                      height: 76px;
+                     p{
+                          border: 0.296vw solid  #E00027;
+                          border-radius: 50% 50%;
+                          font: normal 2.5vw GothamProRegular;
+                          clip-path: circle(50%);
+                          height: 1.2em;
+                          font-style: normal;
+                          width: 1.2em; 
+                          color: #E00027;
+                          text-align: center;
+                          
+                       }
+                      
+                  }
+                    .rating-result span {
+                          padding: 0;
+                          font-size: 32px;
+                          margin: 0 3px;
+                          line-height: 1;
+                          color:  @maincolor;
+                          text-shadow: 0.024vw  0.024vw 0.021vw 0.024vw #bbb;
+                      }
+                      .rating-result > span:after {
+                          content: '★';
+                      }
+                      .rating-result > span.active {
+                          color: #E00027;
+                         
+                      }
+                      .rating-area {
+                          width: 100%;
+                          display: flex;
+                          flex-direction:  row-reverse;
+                          justify-content: center;
+                      }
+                      .rating-area:not(:checked) > input {
+                          display: none;
+                      }
+                      .rating-area:not(:checked) > label {
+                          width: 42px;
+                          padding: 0;
+                          cursor: pointer;
+                          font-size: 32px;
+                          line-height: 32px;
+                          color:  @maincolor;
+                          text-shadow: 0.027vw 0.021vw #bbb;
+                      }
+                      .rating-area:not(:checked) > label:before {
+                          content: '★';
+                      }
+                      .rating-area > input:checked ~ label {
+                          color: #E00027;
+                          
+                      }
+                      .rating-area:not(:checked) > label:hover,
+                      .rating-area:not(:checked) > label:hover ~ label {
+                          color: #E00027;
+                      }
+                  
+                  div{
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: center;
+                      height: auto;
+                      align-items: flex-start;
+                      h1{
+                          font: 700 1.875vw GothamProRegular;
+                          font-weight: normal;
+                          line-height: 28,8px;
+                          align-self: flex-start;
+                          color: #333E48;
+                      }
+                  }
+                  .video{
+                        display: flex;
+                        flex-direction: row;
+                        width: 900px;
+                        height: 500px;
+                        justify-content: center;
+                  }
+                  .popup {
+                      position: relative;
+                      bottom: 80px;
+                      display: inline-block;
+                      cursor: pointer;
+                      width: 100%;
+                      text-align: center;
+                      font: 325 1.25vw GothamProRegular;
+                      font-style: normal;
+                      color: #333E48;
+                  }
+                  
+                 
+                  .popup .popuptext {
+                      visibility: hidden;
+                      font: 325 1.25vw GothamProRegular;
+                      font-style: normal;
+                      background-color: rgb(230, 230, 230);
+                      color: #333E48;
+                      text-align: center;
+                      border-radius: 6px;
+                      margin-left: 15px;
+                      margin-right: 15px;
+                      position: absolute;
+                      z-index: 1;
+                      bottom: 125%;
+                      padding: 10px 0;
+                      
+                      
+                  }
+                  
+                  
+                  .popup .popuptext::after {
+                      content: "";
+                      position: absolute;
+                      top: 100%;
+                      left: 50%;
+                      margin-left: -5px;
+                      border-width: 5px;
+                      border-style: solid;
+                      border-color: #555 transparent transparent transparent;
+                  }
+                  
+                
+                  .popup .show {
+                      visibility: visible;
+                      -webkit-animation: fadeIn 1s;
+                      animation: fadeIn 1s
+                  }
+                  
+                
+                  @-webkit-keyframes fadeIn {
+                      from {opacity: 0;}
+                      to {opacity: 1;}
+                  }
+                  
+                  @keyframes fadeIn {
+                      from {opacity: 0;}
+                      to {opacity:1 ;}
+                  }
+                  
+
+
+                }
+                .footer{
+                  width: 900px;
+                  height: auto;
+                  display: flex;
+                  justify-content: center;
+                  background: @artcolor;
+                  .footerimage{
+                      width: 900px;
+                      height:90px;
+                      background: url(../images/footerim.png) no-repeat ;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: flex-end;
+                      align-items: center;
+                         .messengerlink{
+                               display: flex;
+                               flex-direction: row;
+                             form{
+                                 
+                                 button{
+                                     border: none !important;
+                                     background-color: transparent !important;
+                                     display: inline-block;
+                                    }
+                                    button:hover{
+                                     border: none !important;
+                                     background-color: transparent !important;
+                                     }
+                                 }
+                            .facebooklink{
+                                margin-right: 15px;
+                                margin-left:7px ;
+                            }
+                           }
+                         }
+                }
+
+          }
+        }
+           
+    }
+
+
+    
+@media (min-width: 1025px) and (max-width: 1200px) {
+      body{
+          padding: 0;
+          margin: 0;
+          background:  @maincolor;
+          transition: 1.2s;
+          overflow-x: hidden;
+        #container{
+            max-width: 1200px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url(../images/mainfon.jpg)  no-repeat ;
+            
+              .header{
+                width: 100%;
+                height: auto;
+                background: @artcolor;
+               
+                
+              .logoimage{
+                    width: 100%;
+                    height: 100px;
+                    background: url(../images/logoim.jpg)  top center no-repeat;
+                    background-size: 100% 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+  
+                       .messengerlink{
+                             display: flex;
+                             flex-direction: row-reverse;
+                           form{
+                               
+                               button{
+                                   border: none !important;
+                                   background-color: transparent !important;
+                                   display: inline-block;
+                                  }
+                                  button:hover{
+                                   border: none !important;
+                                   background-color: transparent !important;
+                                   }
+                               }
+                               .instlink{
+                                   max-width: 87%;
+                                   margin-top: 2px;
+                               }
+                          .facebooklink{
+                              max-width: 87%;
+                              margin-right: 15px;
+                              margin-left:7px ;
+                          }
+                         }
+                       }
+                   .headerfon{
+                       width: 100%;
+                       height: auto;
+                       display: flex;
+                       flex-direction: row;
+                       justify-content: flex-end;
+                       align-items: center;
+                   } 
+                  
+                   span{
+                       display: flex;
+                       flex-wrap: wrap;
+                       flex-direction: row;
+                       justify-content: center;
+                       text-align: center;
+                       height: auto;
+                       padding: 12px 12px;
+                       p{
+                        font:normal 1.25vw GothamProRegular;
+                        font-style: normal;
+                        color: #333E48;
+                      
+                      }
+                   }
+                  
+                
+              }
+              .content{
+                width: 100%;
+                height: auto;
+                background: @artcolor;
+                 span{
+                        
+                        display: flex;
+                        justify-content: center;
+                        height: 76px;
+                       p{
+                            border: 0.296vw solid  #E00027;
+                            border-radius: 100% 100%;
+                            font: normal 32px GothamProRegular;
+                            clip-path: circle(50%);
+                            margin-top: 18px;
+                            height: 0.7em;
+                            width: 0.7em; 
+                            color: #E00027;
+                            text-align: center;
+                            
+                         }
+                         
+                    }
+                   div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    height: 230px;
+                    align-items: flex-start;
+                    text-align: center;
+                        h3{
+                                font: 700 1.875vw GothamProRegular;
+                                font-style: normal;
+                                align-self: flex-start;
+                                flex-wrap: wrap;
+                                line-height: 87px;
+                                color: #333E48;
+                                margin: 12px 12px;
+                                
+                            }
+                   }
+                   .product{
+                       display: flex;
+                       width: 100%;
+                       flex-direction: column;
+                       justify-content: center;
+                       height: auto;
+                       margin-top: -15px;
+                        align-items: flex-end;
+                       a{
+                           display: inline-block;
+                           height: auto;
+                           margin: 0 auto;
+                           align-self: flex-end;
+                      }
+                   }
+                   span{
+                        
+                    display: flex;
+                    justify-content: center;
+                    height: 56px;
+                   p{
+                        border: 0.4vw solid  #E00027;
+                        border-radius: 50% 50%;
+                        font: normal 3.5vw GothamProRegular;
+                        clip-path: circle(50%);
+                        height: 1.2em;
+                        font-style: normal;
+                        width: 1.2em; 
+                        color: #E00027;
+                        text-align: center;
+                        
+                     }
+                    
+                }
+                  .rating-result span {
+                        padding: 0;
+                        font-size: 32px;
+                        color:  @maincolor;
+                        text-shadow: 0.024vw  0.024vw 0.021vw 0.024vw #bbb;
+                    }
+                    .rating-result > span:after {
+                        content: '★';
+                    }
+                    .rating-result > span.active {
+                        color: #E00027;
+                       
+                    }
+                    .rating-area {
+                        width: 100%;
+                        display: flex;
+                        flex-direction:  row-reverse;
+                        justify-content: center;
+                        transition: 1.6s;
+                    }
+                    .rating-area:not(:checked) > input {
+                        display: none;
+                    }
+                    .rating-area:not(:checked) > label {
+                        width: 42px;
+                        padding: 0;
+                        cursor: pointer;
+                        font-size: 32px;
+                        line-height: 32px;
+                        color:  @maincolor;
+                        text-shadow: 0.027vw 0.021vw #bbb;
+                    }
+                    .rating-area:not(:checked) > label:before {
+                        content: '★';
+                    }
+                    .rating-area > input:checked ~ label {
+                        color: #E00027;
+                        
+                    }
+                    .rating-area:not(:checked) > label:hover,
+                    .rating-area:not(:checked) > label:hover ~ label {
+                        color: #E00027;
+                    }
+                
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    height: auto;
+                    align-items: flex-start;
+                    h1{
+                        font: 700 1.875vw GothamProRegular;
+                        font-weight: normal;
+                        line-height: 28,8px;
+                        align-self: flex-start;
+                        color: #333E48;
+                    }
+                }
+                .video{
+                      display: flex;
+                      flex-direction: row;
+                      width: 100%;
+                      height: 400px;
+                      justify-content: center;
+                      align-items: flex-start;
+                      iframe{
+                          align-self: flex-start;
+                      }
+                }
+                .popup {
+                    position: relative;
+                    bottom: 40px;
+                    display: inline-block;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 30%;
+                    text-align: center;
+                    font: 325 2.25vw GothamProRegular;
+                    font-style: normal;
+                    color: #333E48;
+                }
+                 .popup .popuptext {
+                    visibility: hidden;
+                    font: 325 1.55vw GothamProRegular;
+                    font-style: normal;
+                    background-color: rgb(230, 230, 230);
+                    color: #333E48;
+                    text-align: center;
+                    border-radius: 6px;
+                    margin-left: 70px;
+                    margin-right: 70px;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 125%;
+                    padding: 10px 0;
+              }
+                .popup .popuptext::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: #555 transparent transparent transparent;
+                }
+                 .popup .show {
+                    visibility: visible;
+                    -webkit-animation: fadeIn 1s;
+                    animation: fadeIn 1s
+                }
+                
+                 @-webkit-keyframes fadeIn {
+                    from {opacity: 0;}
+                    to {opacity: 1;}
+                }
+                
+                @keyframes fadeIn {
+                    from {opacity: 0;}
+                    to {opacity:1 ;}
+                }
+              }
+              .footer{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                background: @artcolor;
+                .footerimage{
+                    width: 100%;
+                    height:100px;
+                    background: url(../images/footerim.png) no-repeat ;
+                    background-size: cover;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                       .messengerlink{
+                             display: flex;
+                             flex-direction: row-reverse;
+                             
+                           form{
+                               
+                               button{
+                                   border: none !important;
+                                   background-color: transparent !important;
+                                   display: inline-block;
+                                   margin: 12px -1px;
+                                  }
+                                  button:hover{
+                                   border: none !important;
+                                   background-color: transparent !important;
+                                   }
+                               }
+                          .facebooklink{
+                              max-width: 87%;
+                              margin-right: 15px;
+                              margin-left:7px ;
+                          }
+                          .instlink{
+                              max-width: 87%;
+                              margin-top: 2px;
+                          }
+                         }
+                       }
+              }
+  
+        }
+      }
+    }
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+      body{
+          padding: 0;
+          margin: 0;
+          background:  @maincolor;
+          transition: 1.2s;
+          overflow-x: hidden;
+        #container{
+            max-width: 1024px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url(../images/mainfon.jpg)  no-repeat ;
+            
+              .header{
+                width: 100%;
+                height: auto;
+                background: @artcolor;
+              
+                
+              .logoimage{
+                    width: 100%;
+                    height: 100px;
+                    background: url(../images/logoim.jpg)  top center no-repeat;
+                    background-size: 100% 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+  
+                       .messengerlink{
+                             display: flex;
+                             flex-direction: row-reverse;
+                           form{
+                               
+                               button{
+                                   border: none !important;
+                                   background-color: transparent !important;
+                                   display: inline-block;
+                                  }
+                                  button:hover{
+                                   border: none !important;
+                                   background-color: transparent !important;
+                                   }
+                               }
+                               .instlink{
+                                   max-width: 87%;
+                                   margin-top: 2px;
+                               }
+                          .facebooklink{
+                              max-width: 87%;
+                              margin-right: 15px;
+                              margin-left:7px ;
+                          }
+                         }
+                       }
+                   .headerfon{
+                       width: 100%;
+                       height: auto;
+                       display: flex;
+                       flex-direction: row;
+                       justify-content: flex-end;
+                       align-items: center;
+                   } 
+                  
+                   span{
+                       display: flex;
+                       flex-wrap: wrap;
+                       flex-direction: row;
+                       justify-content: center;
+                       text-align: center;
+                       height: auto;
+                       padding: 12px 12px;
+                       p{
+                        font:normal 2.25vw GothamProRegular;
+                        font-style: normal;
+                        color: #333E48;
+                      
+                      }
+                   }
+                  
+                
+              }
+              .content{
+                width: 100%;
+                height: auto;
+                background: @artcolor;
+                 span{
+                        
+                        display: flex;
+                        justify-content: center;
+                        height: 76px;
+                       p{
+                            border: 0.296vw solid  #E00027;
+                            border-radius: 100% 100%;
+                            font: normal 32px GothamProRegular;
+                            clip-path: circle(50%);
+                            margin-top: 18px;
+                            height: 1.2em;
+                            width: 1.2em; 
+                            color: #E00027;
+                            text-align: center;
+                            
+                         }
+                         
+                    }
+                   div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    height: 230px;
+                    align-items: flex-start;
+                    text-align: center;
+                        h3{
+                                font: 700 3.575vw GothamProRegular;
+                                font-style: normal;
+                                align-self: flex-start;
+                                flex-wrap: wrap;
+                                line-height: 87px;
+                                color: #333E48;
+                                margin: 12px 12px;
+                                
+                            }
+                   }
+                   .product{
+                       display: flex;
+                       width: 100%;
+                       flex-direction: column;
+                       justify-content: center;
+                       height: auto;
+                       margin-top: -15px;
+                        align-items: flex-end;
+                       a{
+                           display: inline-block;
+                           height: auto;
+                           margin: 0 auto;
+                           align-self: flex-end;
+                      }
+                   }
+                   span{
+                        
+                    display: flex;
+                    justify-content: center;
+                    height: 56px;
+                   p{
+                        border: 0.7vw solid  #E00027;
+                        border-radius: 50% 50%;
+                        font: normal 6.5vw GothamProRegular;
+                        clip-path: circle(50%);
+                        height: 1.2em;
+                        font-style: normal;
+                        width: 1.2em; 
+                        color: #E00027;
+                        text-align: center;
+                        
+                     }
+                    
+                }
+                  .rating-result span {
+                        padding: 0;
+                        font-size: 32px;
+                        color:  @maincolor;
+                        text-shadow: 0.024vw  0.024vw 0.021vw 0.024vw #bbb;
+                    }
+                    .rating-result > span:after {
+                        content: '★';
+                    }
+                    .rating-result > span.active {
+                        color: #E00027;
+                       
+                    }
+                    .rating-area {
+                        width: 100%;
+                        display: flex;
+                        flex-direction:  row-reverse;
+                        justify-content: center;
+                        transition: 1.6s;
+                    }
+                    .rating-area:not(:checked) > input {
+                        display: none;
+                    }
+                    .rating-area:not(:checked) > label {
+                        width: 42px;
+                        padding: 0;
+                        cursor: pointer;
+                        font-size: 32px;
+                        line-height: 32px;
+                        color:  @maincolor;
+                        text-shadow: 0.027vw 0.021vw #bbb;
+                    }
+                    .rating-area:not(:checked) > label:before {
+                        content: '★';
+                    }
+                    .rating-area > input:checked ~ label {
+                        color: #E00027;
+                        
+                    }
+                    .rating-area:not(:checked) > label:hover,
+                    .rating-area:not(:checked) > label:hover ~ label {
+                        color: #E00027;
+                    }
+                
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    height: auto;
+                    align-items: flex-start;
+                    h1{
+                        font: 700 1.875vw GothamProRegular;
+                        font-weight: normal;
+                        line-height: 28,8px;
+                        align-self: flex-start;
+                        color: #333E48;
+                    }
+                }
+                .video{
+                      display: flex;
+                      flex-direction: row;
+                      width: 100%;
+                      height: 400px;
+                      justify-content: center;
+                      align-items: flex-start;
+                      iframe{
+                          align-self: flex-start;
+                      }
+                }
+                .popup {
+                    position: relative;
+                    bottom: 40px;
+                    display: inline-block;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 30%;
+                    text-align: center;
+                    font: 325 2.25vw GothamProRegular;
+                    font-style: normal;
+                    color: #333E48;
+                }
+                 .popup .popuptext {
+                    visibility: hidden;
+                    font: 325 1.95vw GothamProRegular;
+                    font-style: normal;
+                    background-color: rgb(230, 230, 230);
+                    color: #333E48;
+                    text-align: center;
+                    border-radius: 6px;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 125%;
+                    padding: 10px 0;
+              }
+                .popup .popuptext::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: #555 transparent transparent transparent;
+                }
+                 .popup .show {
+                    visibility: visible;
+                    -webkit-animation: fadeIn 1s;
+                    animation: fadeIn 1s
+                }
+                
+                 @-webkit-keyframes fadeIn {
+                    from {opacity: 0;}
+                    to {opacity: 1;}
+                }
+                
+                @keyframes fadeIn {
+                    from {opacity: 0;}
+                    to {opacity:1 ;}
+                }
+                
+  
+  
+              }
+              .footer{
+                width: 100%;
+                height: auto;
+               display: flex;
+                justify-content: center;
+                background: @artcolor;
+                .footerimage{
+                    width: 100%;
+                    height:90px;
+                    background: url(../images/footerim.png) no-repeat ;
+                    background-size: cover;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                       .messengerlink{
+                             display: flex;
+                             flex-direction: row-reverse;
+                             
+                           form{
+                               
+                               button{
+                                   border: none !important;
+                                   background-color: transparent !important;
+                                   display: inline-block;
+                                   margin: 12px -1px;
+                                  }
+                                  button:hover{
+                                   border: none !important;
+                                   background-color: transparent !important;
+                                   }
+                               }
+                          .facebooklink{
+                              max-width: 87%;
+                              margin-right: 15px;
+                              margin-left:7px ;
+                          }
+                          .instlink{
+                              max-width: 87%;
+                              margin-top: 2px;
+                          }
+                         }
+                       }
+              }
+  
+        }
+      }
+ 
+ 
+  }
+
+  
+
+@media (min-width: 540px) and (max-width: 767px) {
+   
+      body{
+          padding: 0;
+          margin: 0;
+          background:  @maincolor;
+          transition: 1.2s;
+          overflow-x: hidden;
+        #container{
+            max-width: 767px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url(../images/mainfon.jpg)  no-repeat ;
+            
+              .header{
+                width: 100%;
+                height: auto;
+                background: @artcolor;
+               
+                
+              .logoimage{
+                    width: 100%;
+                    height: auto;
+                    background: url(../images/logoim.jpg)  top center no-repeat;
+                    background-size: 100% 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+  
+                       .messengerlink{
+                             display: flex;
+                             flex-direction: row-reverse;
+                           form{
+                               
+                               button{
+                                   border: none !important;
+                                   background-color: transparent !important;
+                                   display: inline-block;
+                                  }
+                                  button:hover{
+                                   border: none !important;
+                                   background-color: transparent !important;
+                                   }
+                               }
+                               .instlink{
+                                   max-width: 87%;
+                                   margin-top: 2px;
+                               }
+                          .facebooklink{
+                              max-width: 87%;
+                              margin-right: 15px;
+                              margin-left:7px ;
+                          }
+                         }
+                       }
+                   .headerfon{
+                       width: 100%;
+                       height: auto;
+                       display: flex;
+                       flex-direction: row;
+                       justify-content: flex-end;
+                       align-items: center;
+                   } 
+                  
+                   span{
+                       display: flex;
+                       flex-wrap: wrap;
+                       flex-direction: row;
+                       justify-content: center;
+                       text-align: center;
+                       height: auto;
+                       p{
+                        font:normal 4.25vw GothamProRegular;
+                        font-style: normal;
+                        color: #333E48;
+                      
+                      }
+                   }
+                  
+                
+              }
+              .content{
+                width: 100%;
+                height: auto;
+                background: @artcolor;
+                 span{
+                        
+                        display: flex;
+                        justify-content: center;
+                        height: 76px;
+                       p{
+                            border: 0.296vw solid  #E00027;
+                            border-radius: 100% 100%;
+                            font: normal 32px GothamProRegular;
+                            clip-path: circle(50%);
+                            margin-top: 18px;
+                            height: 1.2em;
+                            width: 1.2em; 
+                            color: #E00027;
+                            text-align: center;
+                            
+                         }
+                         
+                    }
+                   div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    height: 230px;
+                    align-items: flex-start;
+                    text-align: center;
+                        h3{
+                                font: 700 5.575vw GothamProRegular;
+                                font-style: normal;
+                                align-self: flex-start;
+                                flex-wrap: wrap;
+                                line-height: 29px;
+                                color: #333E48;
+                                margin: 12px 12px;
+                                line-height: 1.5;
+                            }
+                   }
+                   .product{
+                       display: flex;
+                       width: 100%;
+                       flex-direction: column-reverse;
+                       justify-content: center;
+                       height: auto;
+                       margin-top: -15px;
+                        align-items: flex-end;
+                       a{
+                           display: inline-block;
+                           max-width: 40%;
+                           height: auto;
+                           margin: 0 auto;
+                           align-self: flex-end;
+                      }
+                   }
+                   span{
+                        
+                    display: flex;
+                    justify-content: center;
+                    height: 56px;
+                   p{
+                        border: 1.14vw solid  #E00027;
+                        border-radius: 50% 50%;
+                        font: normal 6.5vw GothamProRegular;
+                        clip-path: circle(50%);
+                        height: 1.2em;
+                        font-style: normal;
+                        width: 1.2em; 
+                        color: #E00027;
+                        text-align: center;
+                        
+                     }
+                    
+                }
+                  .rating-result span {
+                        padding: 0;
+                        font-size: 32px;
+                        color:  @maincolor;
+                        text-shadow: 0.024vw  0.024vw 0.021vw 0.024vw #bbb;
+                    }
+                    .rating-result > span:after {
+                        content: '★';
+                    }
+                    .rating-result > span.active {
+                        color: #E00027;
+                       
+                    }
+                    .rating-area {
+                        width: 100%;
+                        display: flex;
+                        flex-direction:  row-reverse;
+                        justify-content: center;
+                        transition: 1.6s;
+                    }
+                    .rating-area:not(:checked) > input {
+                        display: none;
+                    }
+                    .rating-area:not(:checked) > label {
+                        width: 42px;
+                        padding: 0;
+                        cursor: pointer;
+                        font-size: 32px;
+                        line-height: 32px;
+                        color:  @maincolor;
+                        text-shadow: 0.027vw 0.021vw #bbb;
+                    }
+                    .rating-area:not(:checked) > label:before {
+                        content: '★';
+                    }
+                    .rating-area > input:checked ~ label {
+                        color: #E00027;
+                        
+                    }
+                    .rating-area:not(:checked) > label:hover,
+                    .rating-area:not(:checked) > label:hover ~ label {
+                        color: #E00027;
+                    }
+                
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    height: auto;
+                    align-items: flex-start;
+                    h1{
+                        font: 700 1.875vw GothamProRegular;
+                        font-weight: normal;
+                        line-height: 28,8px;
+                        align-self: flex-start;
+                        color: #333E48;
+                    }
+                }
+                .video{
+                      display: flex;
+                      flex-direction: row;
+                      width: 100%;
+                      height: 400px;
+                      justify-content: center;
+                      align-items: flex-start;
+                      iframe{
+                          align-self: flex-start;
+                      }
+                }
+                .popup {
+                    position: relative;
+                    bottom: 40px;
+                    display: inline-block;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 30%;
+                    text-align: center;
+                    font: 325 5.25vw GothamProRegular;
+                    font-style: normal;
+                    color: #333E48;
+                }
+                 .popup .popuptext {
+                    visibility: hidden;
+                    font: 325 3.15vw GothamProRegular;
+                    font-style: normal;
+                    background-color: rgb(230, 230, 230);
+                    color: #333E48;
+                    text-align: center;
+                    border-radius: 6px;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 125%;
+                    padding: 10px 0;
+              }
+                .popup .popuptext::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: #555 transparent transparent transparent;
+                }
+                 .popup .show {
+                    visibility: visible;
+                    -webkit-animation: fadeIn 1s;
+                    animation: fadeIn 1s
+                }
+                
+                 @-webkit-keyframes fadeIn {
+                    from {opacity: 0;}
+                    to {opacity: 1;}
+                }
+                
+                @keyframes fadeIn {
+                    from {opacity: 0;}
+                    to {opacity:1 ;}
+                }
+                
+  
+  
+              }
+              .footer{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                background: @artcolor;
+                .footerimage{
+                    width: 100%;
+                    height:90px;
+                    background: url(../images/footerim.png) no-repeat ;
+                    background-size: cover;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                       .messengerlink{
+                             display: flex;
+                             flex-direction: row-reverse;
+                             
+                           form{
+                               
+                               button{
+                                   border: none !important;
+                                   background-color: transparent !important;
+                                   display: inline-block;
+                                   margin: 12px -1px;
+                                  }
+                                  button:hover{
+                                   border: none !important;
+                                   background-color: transparent !important;
+                                   }
+                               }
+                          .facebooklink{
+                              max-width: 87%;
+                              margin-right: 15px;
+                              margin-left:7px ;
+                          }
+                          .instlink{
+                              max-width: 87%;
+                              margin-top: 2px;
+                          }
+                         }
+                       }
+              }
+  
+        }
+      } 
+    }
+
+
+
+
+      
+@media (min-width: 320px) and (max-width: 539px) {
+        
+        body{
+            padding: 0;
+            margin: 0;
+            background:  @maincolor;
+            transition: 1.2s;
+            overflow-x: hidden;
+          #container{
+              max-width: 539px;
+              height: auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background: url(../images/mainfon.jpg)  no-repeat ;
+              
+                .header{
+                  width: 100%;
+                  height: auto;
+                  background: @artcolor;
+                 
+                  
+                .logoimage{
+                    width: 100%;
+                      background: url(../images/logoim.jpg)  top center no-repeat;
+                      background-size: 100% 100%;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: flex-end;
+                      align-items: center;
+
+                         .messengerlink{
+                               display: flex;
+                               flex-direction: row-reverse;
+                             form{
+                                 
+                                 button{
+                                     border: none !important;
+                                     background-color: transparent !important;
+                                     display: inline-block;
+                                    }
+                                    button:hover{
+                                     border: none !important;
+                                     background-color: transparent !important;
+                                     }
+                                 }
+                                 .instlink{
+                                     max-width: 87%;
+                                     margin-top: 2px;
+                                 }
+                            .facebooklink{
+                                max-width: 87%;
+                                margin-right: 15px;
+                                margin-left:7px ;
+                            }
+                           }
+                         }
+                     .headerfon{
+                         width: 100%;
+                         height: auto;
+                         display: flex;
+                         flex-direction: row;
+                         justify-content: flex-end;
+                         align-items: center;
+                     } 
+                    
+                     span{
+                         display: flex;
+                         flex-wrap: wrap;
+                         flex-direction: row;
+                         justify-content: center;
+                         text-align: center;
+                         height: auto;
+                         p{
+                          font:normal 4.25vw GothamProRegular;
+                          font-style: normal;
+                          color: #333E48;
+                        
+                        }
+                     }
+                    
+                  
+                }
+                .content{
+                  width: 100%;
+                  height: auto;
+                  background: @artcolor;
+                   span{
+                          
+                          display: flex;
+                          justify-content: center;
+                          height: 76px;
+                         p{
+                              border: 0.296vw solid  #E00027;
+                              border-radius: 100% 100%;
+                              font: normal 32px GothamProRegular;
+                              clip-path: circle(50%);
+                              margin-top: 18px;
+                              height: 1.2em;
+                              width: 1.2em; 
+                              color: #E00027;
+                              text-align: center;
+                              
+                           }
+                           
+                      }
+                     div{
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: center;
+                      height: 230px;
+                      align-items: flex-start;
+                      text-align: center;
+                          h3{
+                                  font: 700 5.575vw GothamProRegular;
+                                  font-style: normal;
+                                  align-self: flex-start;
+                                  flex-wrap: wrap;
+                                  line-height: 29px;
+                                  color: #333E48;
+                                  margin: 12px 12px;
+                                  line-height: 1.5;
+                              }
+                     }
+                     .product{
+                         display: flex;
+                         width: 100%;
+                         flex-direction: column-reverse;
+                         justify-content: center;
+                         height: auto;
+                         margin-top: -15px;
+                          align-items: flex-end;
+                         a{
+                             display: inline-block;
+                             max-width: 40%;
+                             height: auto;
+                             margin: 0 auto;
+                             align-self: flex-end;
+                        }
+                     }
+                     span{
+                          
+                      display: flex;
+                      justify-content: center;
+                      height: 56px;
+                     p{
+                          border: 1.14vw solid  #E00027;
+                          border-radius: 50% 50%;
+                          font: normal 6.5vw GothamProRegular;
+                          clip-path: circle(50%);
+                          height: 1.2em;
+                          font-style: normal;
+                          width: 1.2em; 
+                          color: #E00027;
+                          text-align: center;
+                          
+                       }
+                      
+                  }
+                    .rating-result span {
+                          padding: 0;
+                          font-size: 32px;
+                          color:  @maincolor;
+                          text-shadow: 0.024vw  0.024vw 0.021vw 0.024vw #bbb;
+                      }
+                      .rating-result > span:after {
+                          content: '★';
+                      }
+                      .rating-result > span.active {
+                          color: #E00027;
+                         
+                      }
+                      .rating-area {
+                          width: 100%;
+                          display: flex;
+                          flex-direction:  row-reverse;
+                          justify-content: center;
+                          transition: 1.6s;
+                      }
+                      .rating-area:not(:checked) > input {
+                          display: none;
+                      }
+                      .rating-area:not(:checked) > label {
+                          width: 42px;
+                          padding: 0;
+                          cursor: pointer;
+                          font-size: 32px;
+                          line-height: 32px;
+                          color:  @maincolor;
+                          text-shadow: 0.027vw 0.021vw #bbb;
+                      }
+                      .rating-area:not(:checked) > label:before {
+                          content: '★';
+                      }
+                      .rating-area > input:checked ~ label {
+                          color: #E00027;
+                          
+                      }
+                      .rating-area:not(:checked) > label:hover,
+                      .rating-area:not(:checked) > label:hover ~ label {
+                          color: #E00027;
+                      }
+                  
+                  div{
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: center;
+                      height: auto;
+                      align-items: flex-start;
+                      h1{
+                          font: 700 1.875vw GothamProRegular;
+                          font-weight: normal;
+                          line-height: 28,8px;
+                          align-self: flex-start;
+                          color: #333E48;
+                      }
+                  }
+                  .video{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        height: 400px;
+                        justify-content: center;
+                        align-items: flex-start;
+                        iframe{
+                            align-self: flex-start;
+                        }
+                  }
+                  .popup {
+                      position: relative;
+                      bottom: 40px;
+                      display: inline-block;
+                      cursor: pointer;
+                      width: 100%;
+                      height: 30%;
+                      text-align: center;
+                      font: 325 5.25vw GothamProRegular;
+                      font-style: normal;
+                      color: #333E48;
+                  }
+                   .popup .popuptext {
+                      visibility: hidden;
+                      font: 325 3.15vw GothamProRegular;
+                      font-style: normal;
+                      background-color: rgb(230, 230, 230);
+                      color: #333E48;
+                      text-align: center;
+                      border-radius: 6px;
+                      margin-left: 15px;
+                      margin-right: 15px;
+                      position: absolute;
+                      z-index: 1;
+                      bottom: 125%;
+                      padding: 10px 0;
+                }
+                  .popup .popuptext::after {
+                      content: "";
+                      position: absolute;
+                      top: 100%;
+                      left: 50%;
+                      margin-left: -5px;
+                      border-width: 5px;
+                      border-style: solid;
+                      border-color: #555 transparent transparent transparent;
+                  }
+                   .popup .show {
+                      visibility: visible;
+                      -webkit-animation: fadeIn 1s;
+                      animation: fadeIn 1s
+                  }
+                  
+                   @-webkit-keyframes fadeIn {
+                      from {opacity: 0;}
+                      to {opacity: 1;}
+                  }
+                  
+                  @keyframes fadeIn {
+                      from {opacity: 0;}
+                      to {opacity:1 ;}
+                  }
+                  
+
+
+                }
+                .footer{
+                  width: 100%;
+                  height:90px;
+                  display: flex;
+                  justify-content: center;
+                  background: @artcolor;
+                  align-items: flex-end;
+                  .footerimage{
+                      width: 100%;
+                      
+                      background: url(../images/footerim.png) no-repeat ;
+                      background-size:cover;
+                      display: flex;
+                      flex-direction: row;
+                     
+                     .messengerlink{
+                               display: flex;
+                               flex-direction: row-reverse;
+                               
+                             form{
+                                 
+                                 button{
+                                     border: none !important;
+                                     background-color: transparent !important;
+                                     display: inline-block;
+                                     margin: 12px -10px;
+                                    }
+                                    button:hover{
+                                     border: none !important;
+                                     background-color: transparent !important;
+                                     }
+                                 }
+                            .facebooklink{
+                                max-width: 57%;
+                                margin-right: 15px;
+                                margin-left:7px ;
+                            }
+                            .instlink{
+                                max-width: 57%;
+                                margin-top: 2px;
+                            }
+                           }
+                         }
+                }
+
+          }
+        }
+      }
+
+
+
+ 
+ 
+  
